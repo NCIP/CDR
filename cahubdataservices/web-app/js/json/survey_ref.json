@@ -1,0 +1,1088 @@
+{"survey": {
+     "id":"113",
+     "typ":"Non-Donor Version",
+     "title":"Patient Survey about Biobanking Tissues for Use in Future Research",
+     "desc":"<p>You recently were asked to consider donating tissue and blood samples from your surgery to a biobank. You decided not to donate your tissue and blood to the biobank, which is completely OK.</p><p>In this interview, we will ask you questions about your decision, what you remember, and what you think about biobanks in general.  Your responses to our questions will help [INSTITUTION], the National Cancer Institute, and cancer researchers better understand how patients actually think about donating their samples.</p>",
+     "vers":"v1.0.2",
+     "sections":[{
+        "id":"123",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"numeric",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"301",
+                "typ":"text",
+                "title":"What organization is responsible for <u>running the biobank</u> where patients&#39; tissue and blood samples are stored?",
+                "desc":"",
+                "tip":"<b>Correct:</b> NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"302",
+                "typ":"field",
+                "title":"How do patients&#39; decisions to donate or not donate their tissue and blood to the biobank affect their medical care at [Institution]?",
+                "desc":"",
+                "tip":"",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"303",
+                "typ":"text",
+                "title":"What happens to patient tissue and blood samples after they donate them to the biobank?",
+                "desc":"",
+                "tip":"<b>Correct:</b> They will be stored in a <u>biobank</u> for <u>future use</u> in <u>research</u> on <u>various kinds of diseases</u> by <u>researchers around the world</u>. <u>Probe:</u> Can patient tissues be used in any <u>type of research</u> and any <u>kind of disease</u>?",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"304",
+                "typ":"text",
+                "title":"Who can <u>use tissue and blood samples</u> donated to the biobank in future research?",
+                "desc":"",
+                "tip":"<b>Correct:</b> Any type of researcher whose research is approved by a committee of experts. <u>Probe</u>: Does anyone review researchers&#39; plans and have to approve the research?",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"305",
+                "typ":"text",
+                "title":"What <u>kinds of illnesses</u> can researchers study using donated tissue and blood samples?",
+                "desc":"",
+                "tip":"<b>Correct</b>:&nbsp; Any type of illness or disease. <u>Probe</u> if they only say one or a few:&nbsp; Are there any other illnesses",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"306",
+                "typ":"text",
+                "title":"How long will donated tissue and blood samples be <u>part of the biobank</u>?",
+                "desc":"",
+                "tip":"<b>Correct</b>: Indefinitely",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"307",
+                "typ":"text",
+                "title":"Will the biobank store any medical information about patients?",
+                "desc":"",
+                "tip":"<b>Correct</b>:&nbsp; Basic identifying and medical record information linked by numeric codes to patient tissue samples.<br /><br />If \"YES\" What information will be stored?",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"308",
+                "typ":"text",
+                "title":"<u>What would happen if patients change their minds</u> and decide that they do NOT want their donated tissue and blood samples to be stored in the biobank any longer?",
+                "desc":"",
+                "tip":"<b>Correct</b>: Patient tissues and blood will be withdrawn from the biobank, but researchers who already have patient tissues and blood will still be able to use them.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"309",
+                "typ":"text",
+                "title":"What are the <u>risks that a patient might be harmed</u> by having patient tissue and blood samples donated to the biobank?",
+                "desc":"",
+                "tip":"<b>Correct</b>: Only a <u>very small chance</u> someone outside of the biobank and research teams that use my tissues might find out some of my medical information or research results. <u>Probe as needed</u>: What kind of harm could happen? What are the chances? <b>Partially correct:</b> <u>No</u> physical or medical risks.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"310",
+                "typ":"radio",
+                "title":"The <u>next 5 questions</u> ask about <u>what kinds of illnesses</u> researchers are allowed to use donated tissue and blood samples to study:",
+                "desc":"",
+                "tip":"<b>Interviewers:</b> We will provide a standard explanation of &ldquo;fertility&rdquo; for respondents who might need it. An Interviewers version/guide for this survey is being prepared that will include this and much more.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Yes",
+                        "desc":""
+                    },
+                    {
+                        "title":"No",
+                        "desc":""
+                    }
+                ],
+                "options_questions":[
+                    {
+                        "id":"8011",
+                        "typ":"text",
+                        "title":"Researchers at the [<i>Institution</i>]",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                    ],
+                "options_ques_numbering":"",
+                "questions":[
+                    {
+                        "id":"309",
+                        "typ":"text",
+                        "title":"If <u>Yes</u>, Explain.",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"309",
+                        "typ":"text",
+                        "title":"If <u>Yes</u>, Explain Some more.",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                ],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"310",
+                "typ":"",
+                "title":"How long ago were you first <u>told you have</u> OR <u>might have cancer</u>?",
+                "desc":"",
+                "tip":"",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[{
+                    "id":"310",
+                    "typ":"checkbox",
+                    "title":"",
+                    "desc":"",
+                    "tip":"",
+                    "sect_name":"",
+                    "sect_numbering":"",
+                    "options": [
+                        {
+                            "title":"Told Today",
+                            "desc":"Told Today"
+                        }
+                    ],
+                    "options_questions":[],
+                    "options_ques_numbering":"",
+                    "questions":[],
+                    "questions_name":"",
+                    "questions_numbering":""
+                },
+                        {
+                            "id":"302",
+                            "typ":"field",
+                            "title":"",
+                            "desc":"Days ago.",
+                            "tip":"",
+                            "sect_name":"",
+                            "sect_numbering":"",
+                            "options": [],
+                            "options_questions":[],
+                            "options_ques_numbering":"",
+                            "questions":[],
+                            "questions_name":"",
+                            "questions_numbering":""
+                        },
+                        {
+                            "id":"302",
+                            "typ":"field",
+                            "title":"",
+                            "desc":"Weeks ago.",
+                            "tip":"",
+                            "sect_name":"",
+                            "sect_numbering":"",
+                            "options": [],
+                            "options_questions":[],
+                            "options_ques_numbering":"",
+                            "questions":[],
+                            "questions_name":"",
+                            "questions_numbering":""
+                        },
+                        {
+                            "id":"302",
+                            "typ":"field",
+                            "title":"",
+                            "desc":"Months ago.",
+                            "tip":"",
+                            "sect_name":"",
+                            "sect_numbering":"",
+                            "options": [],
+                            "options_questions":[],
+                            "options_ques_numbering":"",
+                            "questions":[],
+                            "questions_name":"",
+                            "questions_numbering":""
+                        }],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"310",
+                "typ":"checkbox",
+                "title":"xxxxxxxThe <u>next 5 questions</u> ask about <u>what kinds of illnesses</u> researchers are allowed to use donated tissue and blood samples to study:",
+                "desc":"",
+                "tip":"<b>Interviewers:</b> We will provide a standard explanation of &ldquo;fertility&rdquo; for respondents who might need it. An Interviewers version/guide for this survey is being prepared that will include this and much more.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Yes",
+                        "desc":""
+                    },
+                    {
+                        "title":"No",
+                        "desc":""
+                    }
+                ],
+                "options_questions":[
+                    {
+                        "id":"8011",
+                        "typ":"text",
+                        "title":"Plain Researchers at the [<i>Institution</i>]",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                    ],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"310",
+                "typ":"text",
+                "title":"Are there any ways that a patient or their family members might <u>personally benefit</u> because the patient donated his or her tissue and blood samples to the biobank?",
+                "desc":"",
+                "tip":"<b>Correct</b>:&nbsp; <u>None</u> except a sense of helping society by participating in medical research.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"311",
+                "typ":"text",
+                "title":"Are there any <u>ways that society might benefit</u>&nbsp; because patients donate tissue and blood samples to the biobank?",
+                "desc":"",
+                "tip":"<b>Correct</b>: We may learn about how to prevent, diagnosis and treat many diseases better.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"312",
+                "typ":"text",
+                "title":"What will researchers do if they learn something about <u>patients&rsquo; personal health</u> if they use their samples",
+                "desc":"",
+                "tip":"<b>Correct</b>:&nbsp; Researchers will NOT tell patients any results about them specifically.<br /><br /><u>Correct at Emory</u>: Emory University may notify me about future research results <u>if future researchers</u> using my tissue collected in this study contact Emory University with information about my health.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"313",
+                "typ":"text",
+                "title":"If research that uses patients&rsquo; tissues or blood from the biobank leads to a new medicine or treatment, who do you think might make money from that new medicine or treatment?",
+                "desc":"",
+                "tip":"<b>Correct</b>: Not patients, but the drug or device or biotech company or the institution where the research is conducted. &nbsp;<u>Probe if necessary</u>: If response is the company and/or institution, ask what about patients?<br /><br /><u>Probe</u> If the response is &ldquo;patients&rdquo; ask what about the company or institution? &nbsp;Also ask why do you believe patients might make some money?",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"314",
+                "typ":"tabled radio",
+                "title":"The <u>next 5 questions</u> ask about <u>what kinds of illnesses</u> researchers are allowed to use donated tissue and blood samples to study:",
+                "desc":"",
+                "tip":"<b>Interviewers:</b> We will provide a standard explanation of &ldquo;fertility&rdquo; for respondents who might need it. An Interviewers version/guide for this survey is being prepared that will include this and much more.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Yes",
+                        "desc":""
+                    },
+                    {
+                        "title":"No",
+                        "desc":""
+                    }
+                ],
+                "options_questions":[
+                    {
+                        "id":"8011",
+                        "typ":"text",
+                        "title":"Researchers at the [<i>Institution</i>]",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8012",
+                        "typ":"text",
+                        "title":"Researchers at other <b>medical research institutions</b> in the United States",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8013",
+                        "typ":"text",
+                        "title":"Researchers at <b>for-profit companies</b> such as drug manufacturing companies)",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8014",
+                        "typ":"text",
+                        "title":"Researchers in <b>countries outside the United States</b>",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                    ],
+                "options_ques_numbering":"alpha",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"315",
+                "typ":"tabled radio",
+                "title":"What <u>kinds of researchers</u> can use patient donated tissue and blood samples?",
+                "desc":"",
+                "tip":"<b>Correct:</b>  NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Yes",
+                        "desc":""
+                    },
+                    {
+                        "title":"No",
+                        "desc":""
+                    }
+                ],
+                "options_questions":[
+                    {
+                        "id":"8015",
+                        "typ":"text",
+                        "title":"Researchers at the [<i>Institution</i>]",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8016",
+                        "typ":"text",
+                        "title":"Researchers at other <b>medical research institutions</b> in the United States",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8017",
+                        "typ":"text",
+                        "title":"Researchers at <b>for-profit companies</b> such as drug manufacturing companies)",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8018",
+                        "typ":"text",
+                        "title":"Researchers in <b>countries outside the United States</b>",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                ],
+                "options_ques_numbering":"alpha",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     },{
+        "id":"124",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"401",
+                "typ":"scale",
+                "title":"You were given information to help you decide whether to donate your tissue and blood samples for future research. How would you rate the <u>amount of information</u> that you were given <u>about the research</u> that your tissue and blood samples might be used for?",
+                "desc":"",
+                "tip":"",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Non-Applicable",
+                        "desc":""
+                    },
+                    {
+                        "title":"0",
+                        "desc":"Far <u>too little</u> information"
+                    },
+                    {
+                        "title":"1",
+                        "desc":""
+                    },
+                    {
+                        "title":"2",
+                        "desc":""
+                    },
+                    {
+                        "title":"3",
+                        "desc":""
+                    },
+                    {
+                        "title":"4",
+                        "desc":""
+                    },
+                    {
+                        "title":"5",
+                        "desc":"Just the <u>right amount</u> of information"
+                    },
+                    {
+                        "title":"6",
+                        "desc":""
+                    },
+                    {
+                        "title":"7",
+                        "desc":""
+                    },
+                    {
+                        "title":"8",
+                        "desc":""
+                    },
+                    {
+                        "title":"9",
+                        "desc":""
+                    },
+                    {
+                        "title":"10",
+                        "desc":"Far <u>too much</u> information"
+                    }
+                ],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[
+                    {
+                        "id":"8019",
+                        "typ":"text",
+                        "title":"Was there <u>any other information</u> you would have <u>liked to receive</u> to help you decide whether to donate your tissue and blood samples to the biobank?",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8020",
+                        "typ":"text",
+                        "title":"Was there any specific information that <u>had a lot of influence</u> in helping you make your decision <u>not</u> to donate?",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8021",
+                        "typ":"text",
+                        "title":"Were you given any information that <u>you did NOT want or need</u>?",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                ],
+                "questions_name":"",
+                "questions_numbering":"alpha"
+            },
+            {
+                "id":"403",
+                "typ":"tabled scale",
+                "title":"The <u>next 5 questions</u> ask about <u>what kinds of illnesses</u> researchers are allowed to use donated tissue and blood samples to study:",
+                "desc":"",
+                "tip":"<b>Interviewers:</b> We will provide a standard explanation of &ldquo;fertility&rdquo; for respondents who might need it. An Interviewers version/guide for this survey is being prepared that will include this and much more.",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [
+                    {
+                        "title":"Non-Applicable",
+                        "desc":"Non-Applicable"
+                    },
+                    {
+                        "title":"0",
+                        "desc":"Far <u>too little</u> information"
+                    },
+                    {
+                        "title":"1",
+                        "desc":""
+                    },
+                    {
+                        "title":"2",
+                        "desc":""
+                    },
+                    {
+                        "title":"3",
+                        "desc":""
+                    },
+                    {
+                        "title":"4",
+                        "desc":""
+                    },
+                    {
+                        "title":"5",
+                        "desc":"Just the <u>right amount</u> of information"
+                    },
+                    {
+                        "title":"6",
+                        "desc":""
+                    },
+                    {
+                        "title":"7",
+                        "desc":""
+                    },
+                    {
+                        "title":"8",
+                        "desc":""
+                    },
+                    {
+                        "title":"9",
+                        "desc":""
+                    },
+                    {
+                        "title":"10",
+                        "desc":"Far <u>too much</u> information"
+                    }
+                ],
+                "options_questions":[
+                    {
+                        "id":"8011",
+                        "typ":"text",
+                        "title":"Researchers at the [<i>Institution</i>]",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8012",
+                        "typ":"text",
+                        "title":"Researchers at other <b>medical research institutions</b> in the United States",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8013",
+                        "typ":"text",
+                        "title":"Researchers at <b>for-profit companies</b> such as drug manufacturing companies)",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8014",
+                        "typ":"text",
+                        "title":"Researchers in <b>countries outside the United States</b>",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [],
+                        "options_questions":[],
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                    ],
+                "options_ques_numbering":"alpha",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            },
+            {
+                "id":"402",
+                "typ":"",
+                "title":"A <u>committee of experts</u> will review all future research using donated tissues from the biobank. The experts will ensure that the proposed studies are ethically appropriate, scientifically important research, and are a good use of the donated samples, before approving the studies.",
+                "desc":"",
+                "tip":"<p><b>Genes</b> (DNA) are in every cell of your body.&nbsp; Genes act like <u>instruction books</u> that tell the cells what to do in our bodies.&nbsp; Genes also carry information about traits that run in families, like eye or hair color. Sometimes small changes in the genes can <u>help cause diseases</u> like cancer or diabetes.</p><p><b>Genetic research</b> examines the genes in donated tissue and blood samples.&nbsp; Genetic research helps researchers learn more about how to prevent and treat diseases like cancer and many others.</p>",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[
+                    {
+                        "id":"8021",
+                        "typ":"scale",
+                        "title":"<i>If you had donated your tissues</i>, how <u>important</u> would it be to you that a <u>committee of experts</u> will decide which future research studies can use your and other&rsquo;s tissue and blood samples?",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [
+                            {
+                                "title":"Non-Applicable",
+                                "desc":""
+                            },
+                            {
+                                "title":"0",
+                                "desc":"Not important at all"
+                            },
+                            {
+                                "title":"1",
+                                "desc":""
+                            },
+                            {
+                                "title":"2",
+                                "desc":""
+                            },
+                            {
+                                "title":"3",
+                                "desc":""
+                            },
+                            {
+                                "title":"4",
+                                "desc":""
+                            },
+                            {
+                                "title":"5",
+                                "desc":"Moderately important"
+                            },
+                            {
+                                "title":"6",
+                                "desc":""
+                            },
+                            {
+                                "title":"7",
+                                "desc":""
+                            },
+                            {
+                                "title":"8",
+                                "desc":""
+                            },
+                            {
+                                "title":"9",
+                                "desc":""
+                            },
+                            {
+                                "title":"10",
+                                "desc":"Completely important"
+                            }
+                        ],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    },
+                    {
+                        "id":"8022",
+                        "typ":"scale",
+                        "title":"<i>If you had donated your tissues</i>, what if future researchers could use your tissue and blood samples in research <u>without</u> having the research to be approved by a <u>committee of experts</u>?",
+                        "desc":"",
+                        "tip":"",
+                        "sect_name":"",
+                        "sect_numbering":"",
+                        "options": [
+                            {
+                                "title":"Non-Applicable",
+                                "desc":""
+                            },
+                            {
+                                "title":"0",
+                                "desc":"Not acceptable at all"
+                            },
+                            {
+                                "title":"1",
+                                "desc":""
+                            },
+                            {
+                                "title":"2",
+                                "desc":""
+                            },
+                            {
+                                "title":"3",
+                                "desc":""
+                            },
+                            {
+                                "title":"4",
+                                "desc":""
+                            },
+                            {
+                                "title":"5",
+                                "desc":"Moderately acceptable"
+                            },
+                            {
+                                "title":"6",
+                                "desc":""
+                            },
+                            {
+                                "title":"7",
+                                "desc":""
+                            },
+                            {
+                                "title":"8",
+                                "desc":""
+                            },
+                            {
+                                "title":"9",
+                                "desc":""
+                            },
+                            {
+                                "title":"10",
+                                "desc":"Completely acceptable"
+                            }
+                        ],
+                        "options_questions":[],
+                        "options_ques_numbering":"",
+                        "questions":[],
+                        "questions_name":"",
+                        "questions_numbering":""
+                    }
+                ],
+                "questions_name":"",
+                "questions_numbering":"alpha"
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     },{
+        "id":"125",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"501",
+                "typ":"text",
+                "title":"What organization is responsible for <u>running the biobank</u> where patients&#39; tissue and blood samples are stored?",
+                "desc":"",
+                "tip":"<b>Correct:</b> NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     },{
+        "id":"126",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"601",
+                "typ":"text",
+                "title":"What organization is responsible for <u>running the biobank</u> where patients&#39; tissue and blood samples are stored?",
+                "desc":"",
+                "tip":"<b>Correct:</b> NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     },{
+        "id":"127",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"701",
+                "typ":"text",
+                "title":"What organization is responsible for <u>running the biobank</u> where patients&#39; tissue and blood samples are stored?",
+                "desc":"",
+                "tip":"<b>Correct:</b> NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     },{
+        "id":"128",
+        "typ":"section",
+        "title":"Questions about Informed Consent for Biobanking Samples",
+        "desc":"<p>First, we want to ask you some questions about the information you received to help you decide whether to donate your tissue and blood samples to the biobank.</p>",
+        "sect_id":"110",
+        "sect_name":"",
+        "sect_numbering":"",
+        "options": [],
+        "options_questions":[],
+        "options_ques_numbering":"",
+        "questions":[
+            {
+                "id":"801",
+                "typ":"text",
+                "title":"What organization is responsible for <u>running the biobank</u> where patients&#39; tissue and blood samples are stored?",
+                "desc":"",
+                "tip":"<b>Correct:</b> NCI or specific institutional site",
+                "sect_name":"",
+                "sect_numbering":"",
+                "options": [],
+                "options_questions":[],
+                "options_ques_numbering":"",
+                "questions":[],
+                "questions_name":"",
+                "questions_numbering":""
+            }
+        ],
+        "questions_name":"",
+        "questions_numbering":"numeric"
+     }],
+     "sect_name":"Part",
+     "sect_numbering":"numeric",
+     "options": [],
+     "options_questions":[],
+     "options_ques_numbering":"",
+     "questions":[],
+     "questions_name":"",
+     "questions_numbering":"numeric"
+    }
+}   
+

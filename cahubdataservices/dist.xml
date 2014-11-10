@@ -1,0 +1,86 @@
+<!--=======================================================-->
+<!-- dist.xml                                              -->
+<!--=======================================================-->
+<!-- ?xml version="1.0"? -->
+
+<!-- Ludwin Barbin 2009-07-24 -->
+
+<project name="Distribute">
+<tstamp/>
+<!-- Pull in the Grails application.properties file, too -->
+<property file="application.properties"/>
+<property file="deploy.properties"/>
+
+
+<macrodef name="propertycopy">
+    <attribute name="name"></attribute>
+    <attribute name="from"></attribute>
+    <sequential>
+       <property name="@{name}" value="${@{from}}"></property>
+    </sequential>
+</macrodef>
+
+<target name="dist.conf">
+<echo>
+       dist.conf
+       conf.tmp.dir : ${conf.tmp.dir}
+       conf.src.dir : ${conf.src.dir}
+       conf.file    : ${conf.file}
+	   basedir:     : ${basedir}
+</echo>
+<!-- create temp directory for distribution -->
+<sshexec host="${conf.host}" username="${conf.userId}" password="${conf.password}" trust="true"
+command="rm -rf ${conf.tmp.dir}; mkdir ${conf.tmp.dir}"/>
+
+<scp todir="${conf.userId}:${conf.password}@${conf.host}:${conf.tmp.dir}" trust="true">
+<fileset dir="${conf.src.dir}">
+<include name="${conf.file}"/>
+</fileset>
+<fileset dir="${basedir}">
+<include name="deploy.xml"/>
+<include name="install.xml"/>
+<include name="application.properties"/>
+<include name="project.properties"/>
+<include name="deploy.properties"/>
+</fileset>
+</scp>
+</target>
+
+<target name="dist.cdr">
+<echo>
+       cdr.host       : ${cdr.host}
+       cdr.tmp.dir    : ${cdr.tmp.dir}
+       cdr.build.dir  : ${cdr.build.dir}
+       cdr.app.war    : ${cdr.app.war}
+	   basedir        : ${basedir}
+</echo>
+<!-- @TODO This is not working -->
+<propertycopy name="app.war" from="app.name.war.${app.env}-app.version"></propertycopy>
+
+<echo>
+       cdr.host       : ${cdr.host}
+       cdr.tmp.dir    : ${cdr.tmp.dir}
+       cdr.build.dir  : ${cdr.build.dir}
+       cdr.app.war    : ${cdr.app.war}
+	   basedir        : ${basedir}
+</echo>
+
+<!-- create temp directory for distribution -->
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" trust="true"
+command="rm -rf ${cdr.tmp.dir}; mkdir ${cdr.tmp.dir}"/>
+
+<scp todir="${cdr.userId}:${cdr.password}@${cdr.host}:${cdr.tmp.dir}" trust="true" >
+<fileset dir="${cdr.build.dir}">
+<include name="${cdr.app.war}"/>
+</fileset>
+<fileset dir="${basedir}">
+<include name="deploy.xml"/>
+<include name="install.xml"/>
+<include name="project.properties"/>
+<include name="deploy.properties"/>
+<include name="application.properties"/>
+</fileset>
+</scp>
+</target>
+
+</project> 

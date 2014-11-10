@@ -1,0 +1,89 @@
+<!--=========================================================-->
+<!-- deploy.xml                                              -->
+<!--=========================================================-->
+<!-- ?xml version="1.0"? -->
+
+<!-- Ludwin Barbin 2009-07-24 -->
+<!-- Modified by Tabor 07-May-2012 -->
+<project name="Deploy">
+<tstamp/>
+
+<property file="application.properties"/>
+<property file="deploy.properties"/>
+
+<target name="backup.conf">
+<echo>
+       backup.conf:
+	   basedir             : ${basedir}
+       conf.dir            : ${conf.dir}
+       conf.archive.dir    : ${conf.archive.dir}
+       app.conf.backup.tar : ${app.conf.backup.tar}
+</echo>
+
+<tar basedir="${conf.dir}" destfile="${conf.archive.dir}/${conf.backup.tar}" />
+</target>
+
+<target name="backup.cdr">
+<!-- tar basedir="${cdr.app.dir}" destfile="${cdr.archive.dir}/${app.cdr.bkup.tar}" / -->
+<copy file="${cdr.webapps}/${cdr.main.project}.war" tofile="${cdr.archive.dir}/${cdr.backup.war}"/>
+</target>
+
+<target name="deploy.conf" depends="clean.conf">
+<echo>
+       deploy.conf:
+	   basedir         : ${basedir}
+       conf.file       : ${conf.file}
+       conf.dir        : ${conf.dir}
+</echo>
+<copy file="${conf.tmp.dir}/${conf.file}" tofile="${conf.dir}/${conf.file}"/>
+</target>
+
+<target name="deploy.cdr">
+<echo>
+       deploy.cdr:
+	   basedir         : ${basedir}
+       cdr.app.war     : ${cdr.app.war}
+       cdr.webapps     : ${cdr.webapps}
+</echo>
+<copy file="${basedir}/${cdr.app.war}" todir="${cdr.webapps}"/>
+</target>
+
+<target name="stop.tomcat">
+<echo>
+    stop.tomcat:
+    CATALINA_HOME   : ${CATALINA_HOME}
+</echo>
+    <java classname="org.apache.catalina.startup.Bootstrap" fork="true">
+        <classpath path="/usr/share/tomcat6/bin/tomcat-juli.jar:/usr/share/tomcat6/bin/bootstrap.jar"/>
+        <jvmarg value="-Dcatalina.home=/usr/share/tomcat6"/>
+        <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager"/>
+        <jvmarg value="-Djava.util.logging.config.file=/usr/share/tomcat6/conf/logging.properties"/>
+        <arg line="stop"/>
+    </java>
+</target>
+
+<target name="start.tomcat">
+<echo>
+    start.tomcat:
+    CATALINA_HOME   : ${CATALINA_HOME}
+</echo>
+    <exec cmd="sudo /etc/init.d/tomcat6 start"/>
+</target>
+
+<target name="backout.conf" depends="clean.conf">
+<untar src="${conf.archive.dir}/${app.conf.bkup.tar}" dest="${conf.dir}"/>
+</target>
+
+<target name="backout.cdr" depends="clean.cdr">
+<untar src="${cdr.archive.dir}/${app.cdr.bkup.tar}" dest="${cdr.app.dir}"/>
+</target>
+
+<target name="clean.conf">
+<delete> <fileset file="${conf.dir}" includes="Config.*"/> </delete>
+</target>
+
+<target name="clean.cdr">
+<delete includeemptydirs="true"> <fileset dir="${cdr.app.dir}" includes="**/*"/> </delete>
+</target>
+
+</project> 

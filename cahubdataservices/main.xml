@@ -1,0 +1,99 @@
+<!-- ?xml version="1.0"? -->
+<!--=======================================================-->
+<!--main.xml                                               -->
+<!--=======================================================-->
+
+<!-- Ludwin Barbin 2009-07-24 -->
+<!-- modified for Groovy / tomcat by Tabor: May-2012 -->
+
+<project name="Main" default="main">
+<tstamp/>
+
+<property file="Login.properties"/>
+<!-- Pull in the Grails application.properties file, too -->
+<property file="application.properties"/>
+<property file="deploy.properties"/>
+
+
+<!-- Main delegator -->
+<target name="main" depends="full.deploy"/>
+<echo>
+		cdr.app.war         : ${cdr.app.war}
+		app.env.dev.server  : ${app.env.dev.server}
+		conf.file           : ${conf.file}
+		conf.host           : ${conf.host}
+</echo>
+<!-- Full deploy application -->
+<!-- target name="full.deploy" depends="dist, backup, deploy, install, cleanup"/ -->
+<target name="full.deploy" depends="dist, backup, deploy"/>
+
+<!-- Distribute Files -->
+<target name="dist" depends="dist.conf, dist.cdr"/>
+<target name="dist.conf">
+<ant antfile="dist.xml" target="dist.conf"/>
+</target>
+<target name="dist.cdr">
+<ant antfile="dist.xml" target="dist.cdr"/>
+</target>
+
+<!-- Backup Files -->
+<target name="backup" depends="backup.conf, backup.cdr"/>
+<target name="backup.conf">
+<sshexec host="${conf.host}" username="${conf.userId}" password="${conf.password}" command="${conf.ant.deploy} backup.conf" trust="true"/>
+</target>
+<target name="backup.cdr">
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.deploy} backup.cdr" trust="true"/>
+</target>
+
+<!-- Deploy Files -->
+<target name="deploy" depends="deploy.conf, deploy.cdr"/>
+<target name="deploy.conf">
+<sshexec host="${conf.host}" username="${conf.userId}" password="${conf.password}" command="${conf.ant.deploy} deploy.conf" trust="true"/>
+</target>
+<target name="deploy.cdr">
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.deploy} deploy.cdr" trust="true"/>
+<!-- sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.deploy} deploy.cdr" trust="true"/ -->
+<!-- sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.deploy} start.tomcat" trust="true"/ -->
+</target>
+
+<!-- Stop tomcat -->
+
+<!-- Start tomcat -->
+
+
+
+<!-- deploy application to tomcat -->
+<target name="install">
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.install} export.app" trust="true" />
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.install} install" trust="true" />
+</target>
+
+<!-- Cleanup Files -->
+<target name="cleanup" depends="clean.unix, clean.loc" />
+<target name="clean.unix">
+<sshexec host="${conf.host}" username="${conf.userId}" password="${conf.password}" command="rm -rf ${conf.tmp.dir}" trust="true"/>
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="rm -rf ${cdr.tmp.dir}" trust="true"/>
+</target>
+<target name="clean.loc">
+<delete dir="${src.dir}"/>
+<delete dir="${classes.dir}"/>
+<delete dir="${build.dir}"/>
+</target>
+
+<!-- Backout Files if deployment fails -->
+<target name="backout" depends="backout.conf, backout.cdr"/>
+<target name="backout.conf">
+<sshexec host="${conf.host}" username="${conf.userId}" password="${conf.password}" command="${conf.ant.deploy} backout.conf" trust="true"/>
+</target>
+<target name="backout.cdr">
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.deploy} backout.cdr" trust="true"/>
+<sshexec host="${cdr.host}" username="${cdr.userId}" password="${cdr.password}" command="${cdr.ant.install} backout" trust="true" />
+</target>
+
+
+<!-- Build application ( not used for now, use wars.bat instead: Tabor ) -->
+<!-- target name="build" -->
+<!--ant antfile="build.xml" target="build"/ -->
+<!-- /target -->
+
+</project> 

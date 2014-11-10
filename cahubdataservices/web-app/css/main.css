@@ -1,0 +1,416 @@
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+/* GENERAL */
+
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 0;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    float:left;
+    width:99.5%;
+}
+
+#header {
+    float:left;
+    width:100%;
+}
+
+#grailsLogo {
+        float:left;
+	padding:20px;
+        width:400px;
+}
+#userInfo {
+        float:right;
+	padding-top:20px;
+        width:24%;
+        color: #336699;
+        font-weight: normal;
+        font-size: 12px;
+        
+}
+
+a:link, a:visited, a:hover {
+    color: #336699;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+h1 {
+    color: #336699;
+    font-weight: normal;
+    font-size: 16px;
+    margin: .8em 0 .3em 0;
+}
+
+h2 {
+    color: #336699;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+input, select, textarea {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+select {
+   padding: 2px 2px 2px 0;
+}
+textarea {
+	width: 250px;
+	height: 100px;
+	vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+.body {
+    float: left;
+    margin: 0 15px 10px 15px;
+    min-height:400px;
+    min-width: 972px;
+}
+
+/* NAVIGATION MENU */
+
+.nav {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-style: solid none solid none;
+    margin-top: 5px;
+    padding: 7px 12px;
+    float:left;
+    width:98%;
+}
+
+.menuButton {
+    font-size: 10px;
+    padding: 0 5px;
+}
+.menuButton a {
+    color: #333;
+    padding: 4px 6px;
+}
+.menuButton a.home {
+    background: url(../images/skin/house.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.list {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.create {
+    background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.edit {
+    background: url(../images/skin/database_edit.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+td.errors textarea {
+    border: 1px solid red;
+}
+td.errors div{
+    border: 1px solid red;
+}
+/* TABLES */
+
+table {
+    border: 1px solid #ccc;
+    width: 100%
+}
+tr {
+    border: 0;
+}
+td, th, .sortable {
+    font: 11px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: middle;
+}
+th {
+    background: #fff url(../images/skin/shadow.jpg);
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 11px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #fff;
+}
+
+    input[type="checkbox"], input[type="radio"]{
+        background: transparent;
+        border: 0;
+    }
+
+
+/* LIST */
+
+.list table {
+    border-collapse: collapse;
+}
+.list th, .list td {
+    border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+    background: #b2d1ff;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/* DIALOG */
+
+.dialog table {
+    padding: 5px 0;
+}
+
+.prop {
+    padding: 5px;
+}
+.prop .name {
+    text-align: left;
+    width: 15%;
+    white-space: nowrap;
+}
+.prop .value {
+    text-align: left;
+    width: 85%;
+}
+
+/* ACTION BUTTONS */
+
+.buttons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.buttons input {
+    background: #fff;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+.buttons input.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+.buttons input.show {
+    background: transparent url(../images/skin/database_table.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+
+/* Custom classes*/
+
+.no{color:red;font-weight:bold;}        
+.yes{color:green;font-weight:bold;}
+.incomplete{color:darkorange;font-weight:bold;}
+
+
+
+ .prop .name{font-weight:bold;width:auto}
+ .prop .value{width:auto}
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+
+#tt { padding:6px; position:absolute; display:block; background:orange; border:1px solid #999999; }
+
+.timeEntry{
+    width:40px;
+}
+
+#testBannerOK{
+    width:100%;
+    background-color:green;
+    color:white;text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    line-height:22px;    
+}
+
+#testBannerWarn{
+    width:100%;
+    background-color:red;
+    color:white;text-align:center;
+    font-weight:bold;
+    font-size:14px;
+    line-height:22px;    
+}
+
+.countdownHighlight{
+    color:red;
+}
+
+.branding {
+    clear:both;
+    text-align:center;
+    margin-top: 5px;
+    padding: 7px 12px;
+    float:left;
+    width:98%;
+    color:#fff;
+}
+
+table.bpvws{
+    
+     border:1px solid #ddd;border-collapse: collapse
+}
+td.bpvws{
+    
+     border:1px solid #ddd;border-collapse: separate
+}
+th.bpvws{
+    
+     border:2px solid #ddd;border-collapse: collapse
+}
+
+html body .cleardate { width:35px; padding: 2px 4px;}
+html body.show .cleardate {display:none;}
+html body.show img.ui-datepicker-trigger { display:none; }
+.activeDate img.ui-datepicker-trigger, .activeDate .cleardate { display:inline;}
+.ui-datepicker-trigger{position:relative; top:5px;padding:2px 0 2px 0;}
+.hasDatepicker, .ui-datepicker-trigger {color:#333; cursor: pointer; margin-right:3px;}
+body.show .hasDatepicker, body.show .ui-datepicker-trigger {color:#777; cursor: pointer; margin-right:3px;}
+.hasDatepicker {width: 105px;}
+
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; } 
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* dl.formdetails { padding: 10px 0;} */
+/* dl.formdetails dt { float:left; margin-right:10px; font-weight: bold;} */
+/* dl.formdetails dd {float:left; margin-right:40px;} */
+dl.formdetails { padding: 5px 0;}
+dl.formdetails dt { float:left; margin-right:5px; font-weight: bold;}
+dl.formdetails dd {float:left; margin-right:20px;}
+.createspace{margin-right:15px;}
+.redactedMsg {color: #FF0000; font-weight: bold;}
+.home-case-status {font-weight: bold;}

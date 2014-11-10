@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+added to prevent Cross-site scripting attacks
+Dave Tabor  24-Sep-2013
+-->
+<Context path="/cahubdataservices" useHttpOnly="true" />

@@ -1,0 +1,6 @@
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000007</caseId><code>RPCI</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord && ^
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000008</caseId><code>RPCI</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord && ^
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000009</caseId><code>RPCI</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord && ^
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000010</caseId><code>SC</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord && ^
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000011</caseId><code>SC</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord && ^
+curl --verbose --request POST --header "Content-Type: text/xml" --data "<caseRecord><caseId>GTEX-000012</caseId><code>SC</code></caseRecord>" http://localhost:8080/cahub.datarecords/rest/caserecord

@@ -24,7 +24,8 @@ After cloning from GitHub, open a console window, navigate to the cahubdataservi
   0) set JAVA_OPTS=-XX:MaxPermSize=128m -XX:PermSize=512m -Xms1024m -Xmx2048m (This is a generous estimate. Default memory settings are not enough.)
 
 1) grails RunApp 
-	This will download all project plug-ins, resolve dependencies and determine if your environment is set up properly. If all goes well, you should see the following message: Server running. Browse to http://localhost:8080/cahubdataservices
+
+This will download all project plug-ins, resolve dependencies and determine if your environment is set up properly. If all goes well, you should see the following message: Server running. Browse to http://localhost:8080/cahubdataservices
 
 2) Open a browser if your choice and enter http://localhost:8080/cahubdataservices
 
